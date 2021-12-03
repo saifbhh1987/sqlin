@@ -54,4 +54,10 @@
  
 # Listing the contents of the database:
  - SELECT * FROM information_schema.tables 
- - 
+
+
+# Blind SQL injection :
+Blind SQL injection arises when an application is vulnerable to SQL injection, but its HTTP responses do not contain the results of the relevant SQL query or the details of any database errors. 
+
+
+
