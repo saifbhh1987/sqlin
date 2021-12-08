@@ -1,0 +1,8 @@
+#-bypass login form technique :
+  - login from with basic sql bypass :
+    - admin' or 1=1 #
+    - add space in begin of user name in register method 
+    - if found illegal char see waf bypass method from here : https://github.com/0xInfection/Awesome-WAF
+    - bypass illegal char = u can use > or <  ex : admin' or 'a'>'b
+    
+  
