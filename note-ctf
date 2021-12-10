@@ -4,5 +4,4 @@
     - add space in begin of user name in register method 
     - if found illegal char see waf bypass method from here : https://github.com/0xInfection/Awesome-WAF
     - bypass illegal char = u can use > or <  ex : admin' or 'a'>'b
-    
-  
+    - to see second of third or ... use offset ex : select * from users offset 1 
